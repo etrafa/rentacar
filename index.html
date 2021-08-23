@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent a Car</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ETRAFA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapseText">
+          <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- PICTURE SECTION -->
+    <section id="slide-show">
+      <div class="row">
+        <div class="col-lg-12">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"                  
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h4 class="picture-h4 fast-affordable">FAST & AFFORDABLE</h4>
+                <h6 class="car-brand">Lincoln MKS <br> SEDAN</h6>
+                  <p>$25/DAY</p>
+                  <button class="btn btn-lg btn-primary">BOOK NOW</button>
+                <img
+                  src="./images/car1.png"
+                  class="d-block w-100"
+                  alt="rent-our-car-picture-1"
+                />
+              </div>
+              <div class="carousel-item">
+                <h4 class="picture-h4">THE AMAZING RIDE</h4>
+                <h6 class="car-brand">HYUNDAI VELOSTER</h6>
+                  <p>$30/DAY</p>
+                  <button class="btn btn-lg btn-primary">BOOK NOW</button>
+                <img
+                  src="./images/car2.png"
+                  class="d-block w-100"
+                  alt="rent-our-car-picture-1"
+                />
+              </div>
+              <div class="carousel-item">
+                <h4 class="picture-h4">FREE TEST DRIVE</h4>
+                <h6 class="car-brand">MAZDA <br> TOURING</h6>
+                  <p>$55/DAY</p>
+                  <button class="btn btn-lg btn-primary">BOOK NOW</button>
+                <img
+                  src="./images/car3.png"
+                  class="d-block w-100"
+                  alt="rent-our-car-picture-1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="select-options">
+      <!--      //SELECT THE CAR MODEL    // -->
+      <h1>RENT A CAR NOW!</h1>
+      <div class="row">
+    <div class="col-lg-12">          
+     <select class="form-select" name="cars" id="cars">
+      <option value="car-model">CAR MODEL</option>
+       <option value="volkswagen">VolksWagen Touareg</option>
+       <option value="audi">Audi A4</option>
+       <option value="bmw">BMW 760Li</option>
+       <option value="renault">Renault Megane </option>
+       <option value="ford">Ford Focus</option>
+      </select>
+    </div>
+
+          <!--      //SELECT PICK-UP LOCATION    // -->
+    <div class="col-lg-12">      
+      <select class="form-select" name="location" id="location">
+      <option value="pickup-location">PICK-UP LOCATION</option>
+      <option value="seattle">Seattle</option>
+      <option value="kansas">Kansas City</option>
+      <option value="newyork">New York</option>
+      <option value="losangeles">Los Angeles</option>
+      </select>
+    </div>    
+    
+        <!--      //PICK-UP DATE    // -->
+    <div class="col-lg-12">
+      <input class="form-select " type="date" name="date" id="date">
+    </div>
+    
+        <!--      DROP-OFF LOCATION  // -->
+    <div class="col-lg-12">     
+    <select class="form-select" name="location" id="location">
+      <option value="pickup-location">DROP-OFF LOCATION</option>
+      <option value="seattle">Seattle</option>
+      <option value="kansas">Kansas City</option>
+      <option value="newyork">New York</option>
+      <option value="losangeles">Los Angeles</option>
+    </select>
+    </div>
+
+    <!--      DROP-OFF DATE  // -->
+    <div class="col-lg-12">      
+    <input class="form-select" type="date" name="date" id="date">
+    </div>      
+  </div>
+  <button class="btn-lg btn-outline-light btn-dark submit-button">Submit</button>  
+    </section>
+          <!--      SERVICES SECTION   // -->
+    <section id="services">      
+      <div class="row services">
+        <div class="col-12">
+          <h1 style="color: black;">OUR SERVICES</h1>
+          <div class="pickup-delivery">
+          <i class="fas fa-key fs-2 service-icon" style="color: #FF6600;"></i>
+          <h5 class="our-services-text services-header">PICKUP & DELIVERY</h5>
+          <p>We are offering a variety of cars, services, and partnerships to meet all your travel needs.</p>
+          </div>
+          <div class="personal-driver">
+          <i class="fas fa-user-tie fs-2 service-icon"style="color: #FF6600;"></i>    
+          <h5 class="our-services-text services-header">PERSONAL DRIVER</h5>      
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores autem asperiores!</p>
+          </div>
+          <div class="fuel-plans">
+          <i class="fas fa-gas-pump fs-2 service-icon"style="color: #FF6600;"></i>   
+          <h5 class="our-services-text services-header">FUEL PLANS</h5>     
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor?</p>
+        </div>
+        <div class="car-navigation">
+          <i class="fas fa-route fs-2 service-icon"style="color: #FF6600;"></i>
+          <h5 class="our-services-text services-header">CAR NAVIGATION</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, aliquam.</p>
+        </div>
+        </div>
+      </div>      
+    </section>
+
+
+    <!--      SERVICES SECTION   // -->
+
+    <section id="pricing">
+      <!--     CAR 1  // -->
+      <div class="row first-car">
+        <div class="col-12 text-center">
+          <div class="card offset-2" style="width: 18rem;">
+            <div class="card-header">BUDGET</div>                   
+              <img class="card-img-top" src="./images/option-1.png" alt="Card image cap">              
+              <h4 style="color: #FF6600">$<span class="car-price">25</span></h4>  
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check"></i> Free vehicle delivery</li>
+                <li class="list-group-item"><i class="fas fa-check"></i> Car navigation system</li>
+                <li class="list-group-item"><i class="fas fa-check"></i> Standard fuel plan</li>
+                <li class="list-group-item"><i class="fas fa-check"></i> Breakdown assistance</li>
+                <li class="list-group-item"><i class="fas fa-check"></i> Full insurance</li>
+              </ul>
+              <a href="#" class="btn btn-dark btn-rent-now">Rent Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!--     CAR 2  // -->
+          <div class="row second-car">
+            <div class="col-12 text-center">
+              <div class="card offset-2" style="width: 18rem;">
+                <div class="card-header">BUSINESS</div>         
+                  <img class="card-img-top" src="./images/option-2.png" alt="Card image cap">
+                  <h4 style="color: #FF6600;">$<span class="car-price">50</h4> 
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-check"></i> Free vehicle delivery</li>
+                    <li class="list-group-item"><i class="fas fa-check"></i> Car navigation system</li>
+                    <li class="list-group-item"><i class="fas fa-check"></i> Standard fuel plan</li>
+                    <li class="list-group-item"><i class="fas fa-check"></i> Breakdown assistance</li>
+                    <li class="list-group-item"><i class="fas fa-check"></i> Full insurance</li>
+                  </ul>
+                  <a href="#" class="btn btn-dark btn-rent-now">Rent Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--     CAR 3  // -->
+          <div class="row third-car">
+            <div class="col-12 text-center">
+              <div class="card offset-2" style="width: 18rem;">
+                <div class="card-header">ENTERPRISE</div>         
+                  <img class="card-img-top" src="./images/option-3.png" alt="Card image cap">
+                  <h4 style="color: #FF6600;">$<span class="car-price">75</h4>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-check"></i> Vehicle delivery</li>
+                    <li class="list-group-item"><i class="fas fa-check"></i> Car navigation system</li>
+                    <li class="list-group-item"><i class="fas fa-check"></i> Standard fuel plan</li>
+                    <li class="list-group-item"><i class="fas fa-check"></i> Breakdown assistance</li>
+                    <li class="list-group-item"><i class="fas fa-check"></i> Full insurance</li>
+                  </ul>
+                  <a href="#" class="btn btn-dark btn-rent-now">Rent Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+        <!--      WHY CHOOSE US SECTION  // -->
+
+  <section id="why-us">
+    <div class="row text-center">
+      <div class="col-12">
+        <h2>WHY CHOOSE US?</h2>
+        <p class="why-choose-us-text">Get the lowest rental car deal and take advantage of our special deals while getting fast & quality service. Get started today!</p>
+        <button class="btn btn-sm btn-dark  btn-get-started">Get Started</button>
+      </div>
+
+      <div class="col-12">
+        <h6 class="progress-bar-text">SAVE ON YOUR NEXT TRIP</h6>   
+        <div class="progress">
+          <div class="progress-bar bg-dark" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>        
+    </div>  
+    
+    <div class="col-12">    
+      <h6 class="progress-bar-text">SAVE ON YOUR NEXT TRIP</h6>
+      <div class="progress">
+        <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>   
+      
+      <div class="col-12">    
+        <h6 class="progress-bar-text">CUSTOMER SATISFACTION RATES</h6>
+        <div class="progress">
+          <div class="progress-bar bg-dark" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>  
+  </div>  
+  </section>  
+    <hr class="divider">
+  
+      <!--      TESTIMONIALS SECTION  // -->
+  <section id="testimonials">
+    <div class="row text-center">
+      <div class="col-lg-4 col-6 comment-1">
+        <h4>Great Costumer Service</h4>
+        <p class="costumer-review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, nesciunt.</p>
+        <h6>Emily L.</h6>
+        <img class="testimonial-profile-picture-1" src="./images/profile-1.jpg" alt="testimonial-profile-picture-1">
+        <p class="user-town">Kansas City, Missouri</p>
+      </div>
+      <div class="col-lg-4 col-6 comment-2">
+        <h4>Excellent Team</h4>               
+        <p class="costumer-review">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <div class="iris-h">
+          <h6>Iris H.</h6>
+        <img class="testimonial-profile-picture-2" src="./images/profile2.jpg" alt="testimonial-profile-picture-2">
+        <p class="user-town">Houston, Texas</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+    <!--      FOOTER  SECTION  // -->
+  <section id="footer">
+    <footer>
+      <div class="row">
+      <div class="contact-informations">
+        <div class="row">
+          <div class="col-4"> <i class="fas fa-map-marker-alt fs-2"></i></div>
+          <div class="col-6"><p>Fictional Address 20, Kansas City, Missouri</p></div>
+      </div>
+          <div class="row">
+            <div class="col-4"><i class="fas fa-phone-alt fs-2"></i></div>
+            <div class="col-6"><p>(0123)45675265</p></div>
+          </div>
+        <div class="row">
+          <div class="col-4"><i class="far fa-envelope fs-2"></i></div>
+          <div class="col-6"><p>etemsenel96@hotmail.de</p></div>
+        </div>      
+       </div>
+      </div>
+
+      <div class="footer-about-us">
+        <h3 class="text-center">ABOUT US</h3>
+        <p class="about-us-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus error laborum sequi est nesciunt repellat facere qui fuga inventore, expedita ex saepe doloribus optio repudiandae vel omnis eligendi commodi deleniti.</p>
+      </div>
+
+      <div class="social-media text-center">
+        <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fs-3"></i></a>
+        <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter fs-3"></i></a>
+        <a href="http://www.google.com" target="_blank"><i class="fab fa-google-plus-g fs-3"></i></a>
+        <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram fs-3"></i></a>        
+      </div>
+      
+      <div class="footer-services">
+        <h3 class="text-center">SERVICES</h3>
+        <div class="footer-services-text">
+        <a href="#" style="display: block;">Breakdown Assistance</a>
+        <a href="#" style="display: block;">Pickup and Delivery</a>
+        <a href="#" style="display: block;">Personal Driver</a>
+        <a href="#" style="display: block;">Car Navigation</a>
+        <a href="#" style="display: block;">Fuel plans</a>
+        </div>       
+            
+      </div>
+
+      <div class="additional-links">
+        <h3 class="text-center">ADDITIONAL LINKS</h3>
+        <div class="footer-services-text">
+        <a href="#" style="display: block;">About Us</a>
+        <a href="#" style="display: block;">Terms and Conditions</a>
+        <a href="#" style="display: block;">Privacy Policy</a>
+        <a href="#" style="display: block;">News</a>
+        <a href="#" style="display: block;">Contact Us</a>
+      </div>
+      </div>
+
+      <div class="recent-news">
+        <h3 class="text-center">RECENT NEWS</h3>
+        <div class="footer-services-text">
+        <a href="#">Lorem ipsum dolor sit amet.</a>
+        <p>August 22, 2021</p>
+        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit impedit.</a>
+        <p>August 22, 2021</p>
+        <a href="#">Lorem, ipsum dolor sit amet consectetur.</a>
+        <p>August 22, 2021</p>
+        <a href="#">Lorem ipsum dolor sit.</a>
+        <p>August 22, 2021</p>
+        <a href="#">Lorem ipsum dolor sit amet consectetur.</a>
+        <p>August 22, 2021</p>
+      </div>
+      </div>
+
+      <div class="copyright text-center">
+        <p>All rights reserverd. Etem Senel 2021 © </p>
+      </div>
+    </footer>
+  </section>
+  </body>
+</html>

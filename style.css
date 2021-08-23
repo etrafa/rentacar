@@ -1,0 +1,262 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Bree Serif", serif;
+}
+
+#slide-show {
+  /* background-color: cadetblue; */
+  background-color: #1f1f1f;
+  height: 500px;
+  text-align: center;
+  margin-top: 56px;
+}
+.carousel-item {
+  width: 60%;
+  color: white;
+}
+
+#select-options {
+  background-color: #ff6600;
+  height: 660px;
+  width: 96%;
+  padding-top: 30px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+#pricing {
+  padding-top: 220px;
+}
+
+#why-us {
+  margin-top: 100px;
+}
+
+.form-select {
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  margin: 15px;
+}
+
+.submit-button {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#services {
+  height: 500px;
+  text-align: center;
+  font-weight: 300;
+  color: #828282;
+  padding-top: 45px;
+}
+
+.service-icon {
+  color: lightseagreen;
+}
+
+.rent-now-button {
+  margin: 0 auto;
+}
+
+.fa-check {
+  color: #ff6600;
+}
+
+.divider {
+  width: 90%;
+  margin: 25px auto;
+}
+
+.progress {
+  margin: 0 auto;
+  width: 90%;
+  height: 8px;
+}
+
+#testimonials {
+  margin-left: 30px;
+}
+
+.comment-1 {
+  height: 400px;
+  background-color: #f7f7f7;
+  width: 45%;
+  margin-top: 80px;
+}
+.comment-2 {
+  height: 400px;
+  background-color: #f7f7f7;
+  width: 45%;
+  margin-left: 10px;
+  margin-top: 80px;
+}
+
+.testimonial-profile-picture-1 {
+  border-radius: 100%;
+  width: 40%;
+}
+
+.testimonial-profile-picture-2 {
+  border-radius: 100%;
+  width: 40%;
+}
+
+#footer {
+  margin-top: 70px;
+  height: 1500px;
+  background-color: #1f1f1f;
+  color: #828282;
+}
+
+.contact-informations {
+  width: 80%;
+  height: 250px;
+  background-color: #ff6600;
+  margin: 30px auto;
+  display: grid;
+  padding: 30px;
+  color: white;
+}
+
+.w-100 {
+  position: relative;
+  left: 180px;
+  bottom: 120px;
+}
+
+.picture-h4 {
+  font-size: 3rem;
+  text-align: center;
+  margin-left: 35px;
+  font-weight: bolder;
+  position: relative;
+  left: 80px;
+  top: 30px;
+}
+
+.fast-affordable {
+  font-size: 3rem;
+  text-align: center;
+  margin-left: 35px;
+  font-weight: bolder;
+  position: relative;
+  left: 20px;
+  top: 30px;
+}
+
+/* font-family: "Bree Serif", serif; */
+
+.car-brand {
+  font-size: 25px;
+  color: orangered;
+  margin-top: 150px;
+}
+
+/* OUR SERVICES */
+.personal-driver,
+.fuel-plans,
+.car-navigation,
+.our-services-text {
+  padding-top: 20px;
+}
+
+.services-header {
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+/* OUR SERVICES */
+
+.costumer-review {
+  color: #828282;
+}
+
+.iris-h {
+  position: relative;
+  top: 45px;
+}
+
+.user-town {
+  color: #ff6600;
+  padding-top: 20px;
+}
+
+.car-price {
+  font-size: 50px;
+}
+
+.progress-bar {
+  background-color: #ff6600 !important;
+}
+
+.first-car,
+.second-car,
+.third-car {
+  padding-top: 50px;
+}
+
+.btn-rent-now {
+  width: 100%;
+}
+.btn-get-started {
+  width: 50%;
+  height: 50px;
+  margin-top: 30px;
+}
+.why-choose-us-text {
+  color: #828282;
+}
+
+.progress-bar-text {
+  text-align: left;
+  padding: 30px;
+}
+
+.footer-about-us {
+  padding-top: 60px;
+}
+
+.social-media {
+  padding-top: 30px;
+  letter-spacing: 30px;
+}
+
+.footer-services {
+  padding-top: 60px;
+}
+
+.additional-links {
+  padding-top: 60px;
+}
+
+.recent-news {
+  padding-top: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.about-us-text {
+  color: white;
+}
+
+.footer-services-text {
+  margin-left: 15px;
+}
+
+a:hover {
+  color: #ff6600;
+}
+
+.copyright {
+  margin-top: 45px;
+  color: #ff6600;
+}
